@@ -55,9 +55,6 @@ body {
   color: #000000;
 }
 
-.header {
-  background-color: lightblue;
-}
 .burger {
   display: none;
   margin-left: 80px;
@@ -68,7 +65,6 @@ body {
   top: 0;
   height: 60px;
   width: 40px;
-  background-color: red;
   display: block;
 }
 .burger__line {
