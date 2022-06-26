@@ -161,6 +161,19 @@ margin-left: 80px;
 #burger:checked ~ .burger__nav {
     display: unset;
 }
+#burger:checked ~ .burger__label .burger__line_first,
+#burger:checked ~ .burger__label .burger__line_fourth {
+    display: none;
+}
+
+#burger:checked~.burger__label .burger__line_second {
+transform: rotate(45deg);
+}
+
+#burger:checked~.burger__label .burger__line_third {
+        transform: rotate(-45deg);
+    }
+
 
 @media (max-width: 1000px) {
     .burger {
