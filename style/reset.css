@@ -146,9 +146,9 @@ html {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
-a:focus {
+/* a:focus {
   outline: thin dotted;
-}
+} */
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
@@ -223,6 +223,9 @@ textarea {
   margin: 0; /* 2 */
   vertical-align: baseline; /* 3 */
   *vertical-align: middle; /* 3 */
+}
+label {
+  display: block;
 }
 
 /**
