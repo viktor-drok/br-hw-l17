@@ -85,10 +85,9 @@ body {
   top: 40px;
 }
 .burger__nav {
-  background-color: cornsilk;
-  display: none;
   position: absolute;
-  transition: all 1s;
+  transition: all 0.5s ease-out;
+  transform: translate(0, -1000px);
   left: 0;
   top: 60px;
   width: 100%;
@@ -99,6 +98,7 @@ body {
   flex-direction: column;
   gap: 30px;
   margin-top: 30px;
+  background-color: cornsilk;
 }
 .burger__item {
   letter-spacing: 0.3em;
@@ -112,7 +112,7 @@ body {
 }
 
 #burger:checked ~ .burger__nav {
-  display: unset;
+  transform: translate(0, 0);
 }
 
 #burger:checked ~ .burger__label .burger__line_first,
@@ -128,7 +128,12 @@ body {
   transform: rotate(-45deg);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
+  .nav__list {
+    gap: 30px;
+  }
+}
+@media (max-width: 769px) {
   .burger {
     display: unset;
   }
