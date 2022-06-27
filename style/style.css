@@ -168,6 +168,15 @@ body {
 .main__container {
   position: relative;
 }
+
+.hero {
+  height: 600px;
+}
+@media (max-width: 769px) {
+  .hero {
+    height: 420px;
+  }
+}
 .hero__bgi {
   position: absolute;
   top: 0;
@@ -175,6 +184,13 @@ body {
   width: 1440px;
   height: 600px;
   background-image: url("../img/hero/bg-image.png");
+}
+@media (max-width: 769px) {
+  .hero__bgi {
+    transform: scale(0.7);
+    left: -400px;
+    top: -90px;
+  }
 }
 .hero__title {
   display: flex;
@@ -187,6 +203,13 @@ body {
 
 .hero__title h1 {
   font-weight: 600;
+  font-size: 48px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.main__title {
   font-size: 48px;
   line-height: 1.33;
   letter-spacing: 0.05em;

@@ -77,15 +77,9 @@ body {
     }
 }
 
-.header {
-    // .header__burger
-    &__burger {
-    }
-}
-
 .burger {
-display: none;
-margin-left: 80px;
+    display: none;
+    margin-left: 80px;
     // .burger__label
 
     &__label {
@@ -187,20 +181,16 @@ transform: rotate(45deg);
 }
 // --------------------------------------------------------------------------------
 .main {
-
     // .main__container
-
     &__container {
         position: relative;
     }
-
-    // .main__hero
-
-    &__hero {}
 }
-
 .hero {
-
+        height: 600px;
+        @media (max-width: 769px) {
+            height: 420px;
+        }
     // .hero__bgi
 
     &__bgi {
@@ -211,9 +201,14 @@ transform: rotate(45deg);
         height: 600px;
         background-image: url("../img/hero/bg-image.png")
     }
-
+    @media (max-width: 769px) {
+        &__bgi {
+            transform: scale(0.7);    
+            left: -400px;
+            top: -90px;
+        }
+    }
     // .hero__title
-
     &__title {
         display: flex;
         flex: 1 1 auto;
@@ -223,11 +218,43 @@ transform: rotate(45deg);
         height: 120px;
     }
 }
-
 .hero__title h1 {
     font-weight: 600;
     font-size: 48px;
     line-height: 1.33;
     letter-spacing: 0.05em;
     color: #000000;
+}
+// --------------------------------------------------------------------------------------------
+
+.main {
+    // .main__blog
+    &__blog {}
+    // .main__title
+    &__title {
+        font-size: 48px;
+        line-height: 1.33;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+}
+.blog {
+    // .blog__list
+    &__list {}
+    // .blog__item
+    &__item {}
+    // .blog__img
+    &__img {}
+    // .blog__description
+    &__description {}
+}
+.description {
+    // .description__category
+    &__category {}
+    // .description__title
+    &__title {}
+    // .description__date
+    &__date {}
+    // .description__text
+    &__text {}
 }
