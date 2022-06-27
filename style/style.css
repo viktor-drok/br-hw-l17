@@ -85,7 +85,7 @@ body {
   width: 34px;
   height: 2px;
   background-color: #000000;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 .burger__line_second {
   top: 30px;
