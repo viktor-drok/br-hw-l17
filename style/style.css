@@ -102,7 +102,6 @@ body {
   transition: all 0.5s ease-out;
   transform: translate(0, -1000px);
   left: 0;
-  top: 60px;
   width: 100%;
   text-align: center;
   z-index: -2;
@@ -165,4 +164,31 @@ body {
     flex: 1 1 auto;
     justify-content: flex-end;
   }
+}
+.main__container {
+  position: relative;
+}
+.hero__bgi {
+  position: absolute;
+  top: 0;
+  left: -135px;
+  width: 1440px;
+  height: 600px;
+  background-image: url("../img/hero/bg-image.png");
+}
+.hero__title {
+  display: flex;
+  flex: 1 1 auto;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  height: 120px;
+}
+
+.hero__title h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

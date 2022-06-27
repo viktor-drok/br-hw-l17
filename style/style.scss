@@ -22,7 +22,6 @@ body {
         height: 100px;
         z-index: 999;
     }
-  
 }
 
 .header__container::before {
@@ -79,9 +78,7 @@ body {
 }
 
 .header {
-// background-color: lightblue;
     // .header__burger
-
     &__burger {
     }
 }
@@ -97,12 +94,9 @@ margin-left: 80px;
         top: 0;
         height: 60px;
         width: 40px;
-        // background-color: red;
         display: block;
     }
-        
-    // .burger__line
-
+            // .burger__line
     &__line {
         position: absolute;
         top: 20px;
@@ -111,26 +105,15 @@ margin-left: 80px;
         height: 2px;
         background-color: #000000;
         transition: all 0.3s ease-out;
-
-        // .burger__line_first
-
-        &_first {}
-        
-
         // .burger__line_second
-
         &_second {
             top: 30px;
         }
-
         // .burger__line_third
-
         &_third {
             top: 30px;
         }
-
         // .burger__line_fourth
-
         &_fourth {
             top: 40px;
         }
@@ -141,7 +124,6 @@ margin-left: 80px;
         transition: all 0.5s ease-out; 
         transform: translate(0, -1000px);       
         left: 0;
-        top: 60px;
         width: 100%;
         text-align: center;
         z-index: -2;
@@ -153,26 +135,21 @@ margin-left: 80px;
         margin-top: 30px;
         background-color: cornsilk;
     }
-    
-        // .nav__item
-    
-    &__item {
+            // .nav__item
+        &__item {
         letter-spacing: 0.3em;
         text-transform: uppercase;
         font-size: 14px;
         line-height: 1.21;
     }
-    
-        // .nav__link
-    
-    &__link {
+            // .nav__link
+        &__link {
         font-size: 48px;
         color: #000000;
     }
 }
 
 #burger:checked ~ .burger__nav {
-    // display: unset;
     transform: translate(0, 0);
 }
 #burger:checked ~ .burger__label .burger__line_first,
@@ -192,7 +169,6 @@ transform: rotate(45deg);
     gap: 30px;
     }
 }
-
 @media (max-width: 769px) {
     .burger {
         display: unset;
@@ -208,7 +184,50 @@ transform: rotate(45deg);
     flex: 1 1 auto;
     justify-content: flex-end;   
     }
-    
-    
-    
+}
+// --------------------------------------------------------------------------------
+.main {
+
+    // .main__container
+
+    &__container {
+        position: relative;
+    }
+
+    // .main__hero
+
+    &__hero {}
+}
+
+.hero {
+
+    // .hero__bgi
+
+    &__bgi {
+        position: absolute;
+        top: 0;
+        left: -135px;
+        width: 1440px;
+        height: 600px;
+        background-image: url("../img/hero/bg-image.png")
+    }
+
+    // .hero__title
+
+    &__title {
+        display: flex;
+        flex: 1 1 auto;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        height: 120px;
+    }
+}
+
+.hero__title h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.33;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
