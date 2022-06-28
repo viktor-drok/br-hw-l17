@@ -207,7 +207,12 @@ transform: rotate(45deg);
     }
 }
 .hero {
+        max-width: 1440px;
         height: 600px;
+        @media (max-width: 769px) {
+        height: 320px;
+        max-width: 768px;
+        }
     // .hero__title
     &__title {
         display: flex;
@@ -272,14 +277,13 @@ transform: rotate(45deg);
         gap: 60px;
         
     }
-       &__item:nth-child(2) {
+    &__item:nth-child(2) {
         flex-direction: row-reverse;
     }
-    // .blog__img
-    @media (max-width: 966px) {
-    &__img {
-        // transform: scale(0.5966) translate(-100px 0);
-    }
+    
+    &__image-size {
+        width: 100%;
+        height: auto;
     }
     // .blog__description
     &__description {
