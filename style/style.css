@@ -375,17 +375,68 @@ body {
   letter-spacing: 0.1em;
   color: #000000;
 }
+@media (max-width: 1000px) {
+  .post__title {
+    margin-top: 70px;
+  }
+}
 .post__cards {
   display: flex;
   -moz-column-gap: 45px;
        column-gap: 45px;
 }
+@media (max-width: 1000px) {
+  .post__cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 769px) {
+  .post__cards {
+    gap: 50px;
+  }
+}
 .post__card {
   width: 370px;
 }
+@media (max-width: 1000px) {
+  .post__card {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .post__card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 769px) {
+  .post__card, .post__card:nth-child(2) {
+    flex-direction: column;
+  }
+}
 .post__img-size {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+@media (max-width: 1000px) {
+  .post__img {
+    width: 50%;
+  }
+}
+@media (max-width: 769px) {
+  .post__img {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .post__description {
+    width: 50%;
+  }
+}
+@media (max-width: 769px) {
+  .post__description {
+    width: 100%;
+  }
 }
 .post__category {
   display: flex;
@@ -398,6 +449,12 @@ body {
   line-height: 1.66;
   letter-spacing: 0.1em;
   color: #7B7B7B;
+}
+@media (max-width: 1000px) {
+  .post__category {
+    margin-top: 0;
+    font-size: 16px;
+  }
 }
 .post__description-title {
   margin-bottom: 20px;
