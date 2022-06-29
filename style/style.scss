@@ -47,8 +47,6 @@ body {
 
 .search {
     position: relative;
-    // .search__checkbox
-    &__checkbox {}
     // .search__area
     &__area {
         position: absolute;
@@ -262,6 +260,11 @@ transform: rotate(45deg);
         color: #000000;
         padding-bottom: 50px;
     }
+    @media (max-width: 769px) {
+        &__title {
+            text-align: center;
+        }
+    }
 }
 .blog {
     
@@ -352,6 +355,9 @@ transform: rotate(45deg);
         color: #000000;
         margin-bottom: 15px;
     }
+    @media (max-width: 769px) {
+        font-size: 22px;
+    }
     // .description__date
     &__date {
         font-family: 'Lato';
@@ -389,3 +395,4 @@ transform: rotate(45deg);
         height: unset;
     }
 }
+// ------------------------------------------------------------------------------------------

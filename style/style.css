@@ -243,6 +243,11 @@ body {
   color: #000000;
   padding-bottom: 50px;
 }
+@media (max-width: 769px) {
+  .main__title {
+    text-align: center;
+  }
+}
 
 .blog__list {
   display: flex;
@@ -319,6 +324,11 @@ body {
   letter-spacing: 0.1em;
   color: #000000;
   margin-bottom: 15px;
+}
+@media (max-width: 769px) {
+  .description {
+    font-size: 22px;
+  }
 }
 .description__date {
   font-family: "Lato";
