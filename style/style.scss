@@ -396,13 +396,6 @@ transform: rotate(45deg);
     }
 }
 // ------------------------------------------------------------------------------------------
-.main {
-
-    // .main__post
-
-    &__post {}
-}
-
 .post {
 
     // .post__title
@@ -462,12 +455,6 @@ transform: rotate(45deg);
         flex-direction: column;
         }
     }
-
-    // .post__img
-
-    &__img {
-        
-    }
     &__img-size {
         width: 100%;
         height: auto;
@@ -482,10 +469,6 @@ transform: rotate(45deg);
         width: 100%;
         }
     }
-
-    // .post__description
-
-    &__description {}
     @media (max-width: 1000px) {
         &__description {
             width: 50%;
@@ -538,13 +521,6 @@ transform: rotate(45deg);
     }
 }
 // ------------------------------------------------------------------------------------------
-.main {
-
-    // .main__most
-
-    &__most {}
-}
-
 .most {
 
     // .most__title
@@ -633,13 +609,6 @@ transform: rotate(45deg);
         width: 100%;
         height: auto;
     }
-
-    // .most__description
-
-    &__description {}
-
-    // .most__category
-
     &__category {
         display: flex;
         justify-content: space-between;
@@ -656,17 +625,6 @@ transform: rotate(45deg);
         font-size: 16px;
         }
     }
-
-    // .most__category-title
-
-    &__category-title {}
-
-    // .most__category-date
-
-    &__category-date {}
-
-    // .most__description-title
-
     &__description-title {
         font-family: 'Red Hat Display';
         font-weight: 500;
@@ -713,13 +671,6 @@ transform: rotate(45deg);
     }
 }
 // --------------------------------------------------------------------------------
-.main {
-
-    // .main__full
-
-    &__full {}
-}
-
 .full {
     display: flex;
     justify-content: space-between;
@@ -787,12 +738,6 @@ transform: rotate(45deg);
     background: #F4F4F4;
     padding-top: 70px;
 
-    // .footer__container
-
-    &__container {}
-
-    // .footer__title
-
     &__title {
         font-family: 'Red Hat Display';
         font-weight: 400;
@@ -827,19 +772,6 @@ transform: rotate(45deg);
             font-size: 32px;
         }
     }
-
-    // .footer__contacts
-
-    &__contacts {
-
-    }
-    
-    // .footer__contact
-
-    &__contact {
-
-    }
-
     &__contact:first-of-type {
         margin-bottom: 15px;
     }
@@ -863,15 +795,7 @@ transform: rotate(45deg);
     &__social {
         display: flex;
         gap: 23px;
-            }
-
-    // .footer__social-list
-
-    &__social-list {
     }
-
-    // .footer__social-link
-
     &__social-link {
         border: 1px solid #565656;
         display: flex;
@@ -880,18 +804,6 @@ transform: rotate(45deg);
         width: 50px;
         height: 50px;
     }
-    
-    
-    // .footer__social-img
-
-    &__social-img {}
-
-    // .footer__copyright
-
-    &__copyright {}
-
-    // .footer__copyright-title
-
     &__copyright-title {
         text-align: center;
         font-family: 'Lato';
