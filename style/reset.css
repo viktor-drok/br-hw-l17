@@ -165,6 +165,7 @@ a:hover {
  */
 
 img {
+  box-sizing: border-box;
   border: 0; /* 1 */
   -ms-interpolation-mode: bicubic; /* 2 */
 }
