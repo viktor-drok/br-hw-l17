@@ -698,6 +698,11 @@ transform: rotate(45deg);
         background: #565656;
         
     }
+    @media (max-width: 769px) {
+        &__btn {
+            margin-bottom: 70px;
+        }
+    }
     &__btn-link {
         font-family: 'Lato';
         font-weight: 700;
@@ -755,6 +760,7 @@ transform: rotate(45deg);
         line-height: 1.68;
         letter-spacing: 0.05em;
         color: #565656;
+        margin-bottom: 90px;
     }
     @media (max-width: 1000px) {
         &__text {
@@ -774,5 +780,136 @@ transform: rotate(45deg);
 @media (max-width: 1000px) {
     .full {
         flex-direction: column;
+    }
+}
+// -------------------------------------------------------------------------------------------
+.footer {
+    background: #F4F4F4;
+    padding-top: 70px;
+
+    // .footer__container
+
+    &__container {}
+
+    // .footer__title
+
+    &__title {
+        font-family: 'Red Hat Display';
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 1.33;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    &__cont-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 55px;
+    }
+    @media (max-width: 1000px) {
+        &__cont-wrap {
+            flex-direction: column;
+            text-align: center;
+        }
+        &__title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &__contacts {
+            margin-bottom: 40px;
+        }
+    }
+    @media (max-width: 769px) {
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+
+    }
+    
+    // .footer__contact
+
+    &__contact {
+
+    }
+
+    &__contact:first-of-type {
+        margin-bottom: 15px;
+    }
+
+    &__contact-link {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.66;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+    @media (max-width: 769px) {
+        &__contact-link {
+            font-size: 18px;
+        }
+    }
+
+    // .footer__social
+
+    &__social {
+        display: flex;
+        gap: 23px;
+            }
+
+    // .footer__social-list
+
+    &__social-list {
+    }
+
+    // .footer__social-link
+
+    &__social-link {
+        border: 1px solid #565656;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+    
+    
+    // .footer__social-img
+
+    &__social-img {}
+
+    // .footer__copyright
+
+    &__copyright {}
+
+    // .footer__copyright-title
+
+    &__copyright-title {
+        text-align: center;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.66;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+    @media (max-width: 769px) {
+        &__copyright-title {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .footer {
+        height: 420px;
+        padding-top: 50px;
     }
 }

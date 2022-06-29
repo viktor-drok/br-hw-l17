@@ -579,6 +579,11 @@ body {
   height: 46px;
   background: #565656;
 }
+@media (max-width: 769px) {
+  .most__btn {
+    margin-bottom: 70px;
+  }
+}
 .most__btn-link {
   font-family: "Lato";
   font-weight: 700;
@@ -623,6 +628,7 @@ body {
   line-height: 1.68;
   letter-spacing: 0.05em;
   color: #565656;
+  margin-bottom: 90px;
 }
 @media (max-width: 1000px) {
   .full__text {
@@ -642,5 +648,91 @@ body {
 @media (max-width: 1000px) {
   .full {
     flex-direction: column;
+  }
+}
+.footer {
+  background: #F4F4F4;
+  padding-top: 70px;
+}
+.footer__title {
+  font-family: "Red Hat Display";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.footer__cont-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+@media (max-width: 1000px) {
+  .footer__cont-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer__contacts {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 769px) {
+  .footer__title {
+    font-size: 32px;
+  }
+}
+.footer__contact:first-of-type {
+  margin-bottom: 15px;
+}
+.footer__contact-link {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+@media (max-width: 769px) {
+  .footer__contact-link {
+    font-size: 18px;
+  }
+}
+.footer__social {
+  display: flex;
+  gap: 23px;
+}
+.footer__social-link {
+  border: 1px solid #565656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.footer__copyright-title {
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+@media (max-width: 769px) {
+  .footer__copyright-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    height: 420px;
+    padding-top: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
