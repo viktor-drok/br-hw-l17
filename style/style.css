@@ -472,4 +472,118 @@ body {
   line-height: 1.66;
   letter-spacing: 0.05em;
   color: #565656;
+}
+
+.most__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+@media (max-width: 769px) {
+  .most__title {
+    margin-top: 70px;
+  }
+}
+.most__title-popular {
+  font-family: "Red Hat Display";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.most__title-view {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+}
+.most__title-view::after {
+  content: url(../img/blog/arrow-icon.svg);
+  margin-left: 20px;
+}
+.most__cards {
+  display: flex;
+  gap: 60px;
+}
+@media (max-width: 1000px) {
+  .most__cards {
+    gap: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .most__cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+.most__card {
+  width: 50%;
+}
+@media (max-width: 769px) {
+  .most__card {
+    width: 100%;
+  }
+}
+.most__img {
+  margin-bottom: 20px;
+}
+.most__img-size {
+  width: 100%;
+  height: auto;
+}
+.most__category {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+  margin-bottom: 20px;
+}
+@media (max-width: 1000px) {
+  .most__category {
+    font-size: 16px;
+  }
+}
+.most__description-title {
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.most__description-text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.66;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+.most__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 90px;
+  width: 180px;
+  height: 46px;
+  background: #565656;
+}
+.most__btn-link {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
